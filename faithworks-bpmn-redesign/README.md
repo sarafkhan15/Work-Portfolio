@@ -1,129 +1,103 @@
-**Optimising Faith‑Driven Operations with BPMN — FaithWorks Case Study
-**
-A visual, GitHub‑friendly summary of a full BPM lifecycle redesign: from AS‑IS pain points to TO‑BE automation using barcode‑enabled IMS and cloud POS.
+# Optimising Faith-Driven Operations – FaithWorks BPMN Case Study
+*A process improvement **and** redesign project for a non-profit food relief store, blending community service with practical digital transformation.*
 
-TL;DR
+---
 
-Org: FaithWorks Food Assist (non‑profit food relief)
+## About the Project
+FaithWorks Food Assist is a volunteer-run food relief store in Adelaide. Every day, they rescue and redistribute donated food to 180–200 families, offering low-cost meals and groceries.
 
-Scope: 2 core processes — Categorical Sorting & Storage and Customer Service & Checkout
+While their impact is huge, their operations were almost entirely manual — relying on verbal instructions, paper notes, and the experience of a few key people. That meant:
+- Inconsistent service
+- Slow checkouts
+- Repetitive manual work
+- Limited tracking of stock and sales
 
-Method: BPM Lifecycle → AS‑IS → Gap Analysis → TO‑BE BPMN → Improvement Plan
+Our goal was two-fold:
+1. **Process Improvement** – Make the existing way of working faster, more consistent, and less error-prone.  
+2. **Process Redesign** – Reimagine how the core processes could work with the right tools and structure in place.
 
-Tech: Barcode inventory (IMS), cloud POS with discount logic, digital receipts
+---
 
-Impact (expected): Lower errors, faster checkout, traceability, data for continuous improvement
+## What We Did
+We applied the **Business Process Management (BPM) lifecycle** to map, analyse, improve, and redesign two critical processes:
 
-Problem & Goal
+1. **Categorical Sorting, Quality Control & Strategic Storage**  
+   *(From receiving donations → sorting → storage → store shelves)*
 
-FaithWorks serves ~180–200 families daily but relies on manual, verbally taught procedures. This causes duplicated work, inconsistent discount rules, and limited visibility. We aimed to standardise, digitise, and de‑risk operations while keeping costs low and processes volunteer‑friendly.
+2. **Customer Service & Checkout**  
+   *(From membership verification → checkout → payment → post-service yard access)*
 
-What I Did
+For each process, we:
+- Created **AS-IS** diagrams to document the current workflow and identify bottlenecks.  
+- Proposed **improvement measures** for quick wins that could be implemented immediately.  
+- Designed **TO-BE** diagrams for a redesigned process using barcode-enabled inventory management and cloud-based POS systems for long-term scalability.
 
-Conducted stakeholder interview with the store manager
+---
 
-Modelled AS‑IS BPMN for Sorting/Storage and Checkout
+## Key Improvements & Redesign Highlights
+| Area | Before (AS-IS) | Improvement Actions | Redesigned (TO-BE) |
+|------|----------------|--------------------|--------------------|
+| Inventory tracking | Paper/memory | Basic process documentation | Barcode scanning in IMS with real-time updates |
+| Sorting & allocation | Manual, repetitive | Remove unnecessary handovers | IMS suggests optimal allocation; team confirms |
+| Checkout | Slow & error-prone | Staff refresher training | POS auto-applies free item rules and calculates charges |
+| Produce weighing | Manual calc | Clearer weighing rules | Integrated scale updates POS instantly |
+| Receipts | Handwritten/skipped | Standardised templates | Printed or SMS receipts |
+| Exceptions | Ad-hoc fixes | Fallback checklists | Defined fallbacks for system or hardware issues |
 
-Designed TO‑BE BPMN with barcode‑enabled IMS, POS integration, and exception handling
+---
 
-Built comparison tables and a change plan (training, documentation, pilots)
+## Impact We Expect
+- **From improvements:** Immediate gains in consistency, fairness, and reduced stress for volunteers.  
+- **From redesign:** Scalable, data-driven processes that can handle growth without losing community focus.
 
-Full 20+ page report in /docs/report.pdf
+---
 
-Before → After (at a glance)
+## Sample Diagrams
+**AS-IS – Sorting & Storage**  
+[AS-IS Process 1 – Categorical Sorting & Storage (PDF)](docs/As%20is%20process%201%20categorical%20sorting%20and%20storage%20of%20invetory.pdf)
+  
 
-Area
+**TO-BE – Barcode Inventory Process**  
+[![TO-BE Process 1 – Barcode Stock Management](To%20be%20Final%20BPMN%20Process%201%20Barcode%20stock%20mgt.png)](To%20be%20Final%20BPMN%20Process%201%20Barcode%20stock%20mgt.png)
 
-AS‑IS
+[![TO-BE Process 1 – Kitchen Logging & Stock Automation](To%20Be%20process%201%20Kitchen%20Logging%20and%20Stock%20autimation%20process.png)](To%20Be%20process%201%20Kitchen%20Logging%20and%20Stock%20autimation%20process.png)
 
-TO‑BE
+**AS-IS – Customer Checkout**  
+[AS-IS Process 2 – Customer Service & Checkout (PDF)](docs/As%20Is%20Process%202%20Customer%20Service%20and%20checkout%20process.pdf)
+ 
 
-Inventory tracking
+**TO-BE – Digital Checkout**  
+[![TO-BE Process 2 – Customer Service & Checkout](To%20Be%20Process%202%20Customer%20Service%20%26%20Checkout%20process.png)](To%20Be%20Process%202%20Customer%20Service%20%26%20Checkout%20process.png)
 
-Memory/paper, ad hoc
 
-Barcode + IMS with digital traceability
+---
 
-Sorting & allocation
+## Full Resources
+- 📄 Full report (BPMN%20Final%20Report.docx) – includes lifecycle analysis, improvement plan, redesign diagrams, and recommendations  
+- 📊 [Presentation Slides (PPTX)](docs/Presnetation.pptx) – quick visual overview
 
-Repetitive cross‑handoffs
+---
 
-IMS rules suggest allocation; team verifies
+## My Role
+- Led the **process improvement and redesign** work for both core processes  
+- Created BPMN diagrams for redesigned workflows  
+- Developed improvement strategies for immediate implementation  
+- Wrote recommendations and change management steps  
+- Conducted and summarised stakeholder interviews
 
-Free‑item rules
+---
 
-Applied inconsistently
+## Tech & Tools
+- **BPMN 2.0** for process modelling  
+- **Zoho Inventory** (recommended) for barcode inventory  
+- **Cloud POS** for checkout automation (with manual fallback)  
 
-POS applies rules automatically
+---
 
-Produce weighing
+## Next Steps for FaithWorks
+- Implement the **quick improvements** immediately  
+- Pilot the redesigned processes in one area  
+- Train volunteers on barcode scanning & POS use  
+- Expand gradually based on data and feedback
 
-Manual calc
-
-Integrated scale auto‑charges over 2kg
-
-Receipts
-
-Handwritten / skipped
-
-Printed or SMS/email fallback
-
-Exceptions
-
-Ad hoc workarounds
-
-Defined fallbacks for scan/pos/printer issues
-
-Diagrams (Previews)
-
-Replace image file names with your exported PNG/SVGs.
-
-AS‑IS — Categorical Sorting & Storage
-
-AS‑IS — Customer Service & Checkout
-
-TO‑BE — End‑to‑End Barcode Stock Flow
-
-TO‑BE — Digitally Assisted Checkout
-
-Tip: keep filenames lowercase-with-dashes and export at 2x for crisp GitHub rendering.
-
-Key Design Choices
-
-Low‑lift tech: Barcode IMS + cloud POS chosen for low cost and simple training
-
-Human‑centred: Clear fallbacks (manual receipts, off‑system pay) during outages
-
-Data first: Weekly automated stock updates; auditable logs for reviews
-
-BPM alignment: Models reflect gateways for exceptions and volunteer variability
-
-Repo Guide
-
-.
-├── README.md                  # You are here
-└── docs/
-    ├── report.pdf             # Full report (exported from Word)
-    ├── as-is-diagrams/        # PNG/SVG exports
-    │   ├── as-is-sorting.png
-    │   └── as-is-checkout.png
-    └── to-be-diagrams/
-        ├── to-be-inventory.png
-        └── to-be-checkout.png
-
-Results & Next Steps
-
-Expected outcomes: Shorter queues, fewer pricing mistakes, consistent benefits, transparent stock
-
-Pilot plan: Run a small‑scale pilot in storage + checkout; collect metrics (wait time, error rate)
-
-Iterate: Use IMS/POS analytics for monthly reviews; expand automation gradually
-
-How to Use This Repo
-
-Read the diagrams above (open images full‑screen for detail).
-
-Dive into the full report for lifecycle analysis and recommendations: /docs/report.pdf.
-
-Open comparison tables in the report appendices to trace each change to an AS‑IS pain point.
-
+---
