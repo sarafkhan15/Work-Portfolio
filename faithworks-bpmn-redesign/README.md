@@ -54,7 +54,7 @@ For each process, I:
 
 ## Sample Diagrams
 **AS-IS – Sorting & Storage**  
-[AS-IS Process 1 – Categorical Sorting & Storage (PDF)](docs/As%20is%20process%201%20categorical%20sorting%20and%20storage%20of%20invetory.pdf)
+[AS-IS Process 1 – Categorical Sorting & Storage (PDF)](As%20is%20process%201%20categorical%20sorting%20and%20storage%20of%20invetory.pdf)
   
 
 **TO-BE – Barcode Inventory Process**  
@@ -63,7 +63,7 @@ For each process, I:
 [![TO-BE Process 1 – Kitchen Logging & Stock Automation](To%20Be%20process%201%20Kitchen%20Logging%20and%20Stock%20autimation%20process.png)](To%20Be%20process%201%20Kitchen%20Logging%20and%20Stock%20autimation%20process.png)
 
 **AS-IS – Customer Checkout**  
-[AS-IS Process 2 – Customer Service & Checkout (PDF)](docs/As%20Is%20Process%202%20Customer%20Service%20and%20checkout%20process.pdf)
+[AS-IS Process 2 – Customer Service & Checkout (PDF)](As%20Is%20Process%202%20Customer%20Service%20and%20checkout%20process.pdf)
  
 
 **TO-BE – Digital Checkout**  
