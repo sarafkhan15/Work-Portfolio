@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0rtf59s" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.35.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
+  <bpmn:collaboration id="Collaboration_0d58wmj">
+    <bpmn:participant id="Participant_01pnypk" processRef="Process_1ie1mh9" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1ie1mh9" isExecutable="false">
+    <bpmn:laneSet id="LaneSet_1jmn1r2">
+      <bpmn:lane id="Lane_0q7e4vd" name="Drivers">
+        <bpmn:flowNodeRef>Activity_0mt7itn</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:subProcess id="Activity_0mt7itn" name="Sub-Process expansion: Generate &#38; attach barcode to goods">
+      <bpmn:standardLoopCharacteristics />
+      <bpmn:startEvent id="Event_042qvx4">
+        <bpmn:outgoing>Flow_1v4cv68</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:task id="Activity_1whizln" name="Enter palette details: expiry, type, condition">
+        <bpmn:incoming>Flow_1v4cv68</bpmn:incoming>
+        <bpmn:outgoing>Flow_0h14jqi</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:dataObjectReference id="DataObjectReference_0qhpl3x" name="App generates unique barcode" dataObjectRef="DataObject_16n4epb" />
+      <bpmn:dataObject id="DataObject_16n4epb" />
+      <bpmn:task id="Activity_0w7dtzq" name="Print barcode">
+        <bpmn:incoming>Flow_12wlaeh</bpmn:incoming>
+        <bpmn:outgoing>Flow_067n21k</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:task id="Activity_1upb4su" name="Attach printed label to goods">
+        <bpmn:incoming>Flow_067n21k</bpmn:incoming>
+        <bpmn:outgoing>Flow_1kg1x5v</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:task id="Activity_1jbk6q1" name="Confirm attachment in app">
+        <bpmn:incoming>Flow_1kg1x5v</bpmn:incoming>
+        <bpmn:outgoing>Flow_14nyrlk</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:endEvent id="Event_0yecl8o">
+        <bpmn:incoming>Flow_14nyrlk</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:task id="Activity_1h5efpn" name="Generate barcode">
+        <bpmn:incoming>Flow_0h14jqi</bpmn:incoming>
+        <bpmn:outgoing>Flow_12wlaeh</bpmn:outgoing>
+        <bpmn:dataOutputAssociation id="DataOutputAssociation_12fwrjz">
+          <bpmn:targetRef>DataObjectReference_0qhpl3x</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:task>
+      <bpmn:sequenceFlow id="Flow_1v4cv68" sourceRef="Event_042qvx4" targetRef="Activity_1whizln" />
+      <bpmn:sequenceFlow id="Flow_0h14jqi" sourceRef="Activity_1whizln" targetRef="Activity_1h5efpn" />
+      <bpmn:sequenceFlow id="Flow_12wlaeh" sourceRef="Activity_1h5efpn" targetRef="Activity_0w7dtzq" />
+      <bpmn:sequenceFlow id="Flow_067n21k" sourceRef="Activity_0w7dtzq" targetRef="Activity_1upb4su" />
+      <bpmn:sequenceFlow id="Flow_1kg1x5v" sourceRef="Activity_1upb4su" targetRef="Activity_1jbk6q1" />
+      <bpmn:sequenceFlow id="Flow_14nyrlk" sourceRef="Activity_1jbk6q1" targetRef="Event_0yecl8o" />
+    </bpmn:subProcess>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0d58wmj">
+      <bpmndi:BPMNShape id="Participant_01pnypk_di" bpmnElement="Participant_01pnypk" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="980" height="310" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0q7e4vd_di" bpmnElement="Lane_0q7e4vd" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="950" height="310" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0mt7itn_di" bpmnElement="Activity_0mt7itn" isExpanded="true">
+        <dc:Bounds x="260" y="100" width="860" height="270" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_042qvx4_di" bpmnElement="Event_042qvx4">
+        <dc:Bounds x="280" y="202" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1whizln_di" bpmnElement="Activity_1whizln">
+        <dc:Bounds x="359" y="180" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0w7dtzq_di" bpmnElement="Activity_0w7dtzq">
+        <dc:Bounds x="660" y="180" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1upb4su_di" bpmnElement="Activity_1upb4su">
+        <dc:Bounds x="800" y="180" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1jbk6q1_di" bpmnElement="Activity_1jbk6q1">
+        <dc:Bounds x="940" y="180" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0yecl8o_di" bpmnElement="Event_0yecl8o">
+        <dc:Bounds x="1062" y="202" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1h5efpn_di" bpmnElement="Activity_1h5efpn">
+        <dc:Bounds x="510" y="180" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_0qhpl3x_di" bpmnElement="DataObjectReference_0qhpl3x">
+        <dc:Bounds x="391" y="275" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="309" y="296" width="77" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1v4cv68_di" bpmnElement="Flow_1v4cv68">
+        <di:waypoint x="316" y="220" />
+        <di:waypoint x="359" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0h14jqi_di" bpmnElement="Flow_0h14jqi">
+        <di:waypoint x="459" y="220" />
+        <di:waypoint x="510" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_12wlaeh_di" bpmnElement="Flow_12wlaeh">
+        <di:waypoint x="610" y="220" />
+        <di:waypoint x="660" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_067n21k_di" bpmnElement="Flow_067n21k">
+        <di:waypoint x="760" y="220" />
+        <di:waypoint x="800" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1kg1x5v_di" bpmnElement="Flow_1kg1x5v">
+        <di:waypoint x="900" y="220" />
+        <di:waypoint x="940" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_14nyrlk_di" bpmnElement="Flow_14nyrlk">
+        <di:waypoint x="1040" y="220" />
+        <di:waypoint x="1062" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_12fwrjz_di" bpmnElement="DataOutputAssociation_12fwrjz">
+        <di:waypoint x="517" y="259" />
+        <di:waypoint x="427" y="295" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
