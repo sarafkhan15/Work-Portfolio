@@ -12,13 +12,13 @@ While their impact is huge, their operations were almost entirely manual — rel
 - Repetitive manual work
 - Limited tracking of stock and sales
 
-Our goal was two-fold:
+The goal was two-fold:
 1. **Process Improvement** – Make the existing way of working faster, more consistent, and less error-prone.  
 2. **Process Redesign** – Reimagine how the core processes could work with the right tools and structure in place.
 
 ---
 
-## What We Did
+## What I Did
 We applied the **Business Process Management (BPM) lifecycle** to map, analyse, improve, and redesign two critical processes:
 
 1. **Categorical Sorting, Quality Control & Strategic Storage**  
@@ -27,7 +27,7 @@ We applied the **Business Process Management (BPM) lifecycle** to map, analyse, 
 2. **Customer Service & Checkout**  
    *(From membership verification → checkout → payment → post-service yard access)*
 
-For each process, we:
+For each process, I:
 - Created **AS-IS** diagrams to document the current workflow and identify bottlenecks.  
 - Proposed **improvement measures** for quick wins that could be implemented immediately.  
 - Designed **TO-BE** diagrams for a redesigned process using barcode-enabled inventory management and cloud-based POS systems for long-term scalability.
@@ -46,7 +46,7 @@ For each process, we:
 
 ---
 
-## Impact We Expect
+## Impact Expected
 - **From improvements:** Immediate gains in consistency, fairness, and reduced stress for volunteers.  
 - **From redesign:** Scalable, data-driven processes that can handle growth without losing community focus.
 
@@ -75,15 +75,6 @@ For each process, we:
 ## Full Resources
 - 📄 Full report (BPMN%20Final%20Report.docx) – includes lifecycle analysis, improvement plan, redesign diagrams, and recommendations  
 - 📊 [Presentation Slides (PPTX)](docs/Presnetation.pptx) – quick visual overview
-
----
-
-## My Role
-- Led the **process improvement and redesign** work for both core processes  
-- Created BPMN diagrams for redesigned workflows  
-- Developed improvement strategies for immediate implementation  
-- Wrote recommendations and change management steps  
-- Conducted and summarised stakeholder interviews
 
 ---
 
