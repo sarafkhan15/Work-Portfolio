@@ -73,7 +73,7 @@ For each process, I:
 ---
 
 ## Full Resources
-- 📄 Full report (BPMN%20Final%20Report.docx) – includes lifecycle analysis, improvement plan, redesign diagrams, and recommendations  
+- 📄 [BPMN Final Report (DOCX)](docs/BPMN%20Final%20Report.docx)  – includes lifecycle analysis, improvement plan, redesign diagrams, and recommendations  
 - 📊 [Presentation Slides (PPTX)](docs/Presnetation.pptx) – quick visual overview
 
 ---
