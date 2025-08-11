@@ -11,6 +11,13 @@ What’s in this folder
 
 🔧 BPMN source: editable model file
 
+## 📂 Project Files
+
+- [ERP Implementation Plan (DOCX)](https://github.com/sarafkhan15/Work-Portfolio/blob/main/erp-implementation-s4hana/ERP%20Implementation%20Plan.docx)
+- [BPMN Diagram (SVG)](https://github.com/sarafkhan15/Work-Portfolio/blob/main/erp-implementation-s4hana/ERP%20Implementation%20Plan%20BPMN.svg)
+- [BPMN Source File (.bpmn)](https://github.com/sarafkhan15/Work-Portfolio/blob/main/erp-implementation-s4hana/ERP%20Implementation%20Plan.bpmn)
+
+
 Tip: Open the SVG first for a quick visual, then read the DOCX for the full story.
 
 Highlights
