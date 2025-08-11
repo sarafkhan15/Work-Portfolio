@@ -1,4 +1,4 @@
-SAP S/4HANA ERP Implementation – Predictive Maintenance (FutureEnergy)
+**SAP S/4HANA ERP Implementation – Predictive Maintenance (FutureEnergy)**
 
 This project is a practical blueprint for implementing SAP S/4HANA to move a utility from reactive/time-based maintenance to predictive maintenance.
 I mapped the TO-BE process in BPMN, aligned SAP modules (PM, MM, Fiori) to roles, and wrote an implementation plan that balances technology, process, and change.
